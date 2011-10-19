@@ -1,0 +1,52 @@
+.csstransitions.csstransforms
+
+  .deck-container
+    .slide
+      transition: opacity 500ms ease-in-out 0ms;
+
+    &:not(.deck-menu)
+      
+      > .slide
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        padding 5% //0 48px;
+
+        .slide
+          position: relative;
+          left: 0;
+          top: 0;
+          opacity: 0;
+
+        .deck-before,
+        .deck-previous
+          opacity: 0.4;
+
+        .deck-current
+          opacity: 1;
+
+      > .deck-previous,
+      > .deck-before,
+      > .deck-next,
+      > .deck-after
+        opacity: 0;
+        pointer-events: none;
+
+      > .deck-before .slide,
+      > .deck-previous .slide
+        visibility: visible;
+
+      > .deck-child-current
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+      > .deck-child-current .deck-next,
+      > .deck-child-current .deck-after
+        visibility: hidden;
+
+

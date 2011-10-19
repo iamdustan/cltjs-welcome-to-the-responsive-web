@@ -1,0 +1,125 @@
+skookumGreen      = #507d72 // rgb(80,125,114)
+skookumGreenDark  = #0d4237 // rgb(13,66,55)
+
+
+// @group slides
+
+body
+  color #444
+  text-shadow 0 2px 3px #fff
+
+
+.vcard + .slide
+  z-index 4
+
+.deck-container
+  >.slide
+    background two-stop(#ffffff, #efefef)
+
+    &.skookum
+      background two-stop(skookumGreen, skookumGreenDark)
+      color #fff
+      text-shadow 0 2px 5px rgba(0,0,0,.5)
+
+    &.orange
+      background two-stop(darken(#ff8900, 10%), darken(#ff8900, 40%))
+      color #fff
+      text-shadow 0 2px 5px rgba(0,0,0,.5)
+
+.tag
+  background rgba(255,255,255,.9)
+  border 0
+  border-bottom 3px solid #000
+  position absolute
+  padding .75em
+  width 60%
+  right 0
+  top 30%
+
+img.full
+  position absolute
+  top 0
+  left 0
+  min-height 100%
+  min-width 100%
+  z-index -1
+
+// @end slides
+
+// @group vcard footer
+
+.vcard
+  color #fff
+  font-family: 'Kelly Slab', Rockwell, Impact, sans-serif;
+  letter-spacing 1px
+  padding 1.5em
+  position absolute
+  bottom 0
+  left 0
+  right 0
+  z-index 3
+
+  background two-stop(skookumGreen, skookumGreenDark)
+  color #fff
+  text-shadow 0 2px 5px rgba(0,0,0,.5)
+  box-shadow 0 -1px 8px rgba(0,0,0,.75)
+  border-top 1px solid rgba(255,255,255,.75)
+
+  .fn
+    display block
+    font-size 2em
+  
+  a
+    color #fff
+    border-radius 1em
+    inline-block()
+    line-height 2em
+    margin-left -.75em
+    padding 0 .75em
+    text-decoration none
+    transition all .1s linear
+
+    &:hover,
+    &:focus
+      background-color #607890
+      color #fff
+      text-shadow 0 1px 1px darken(#607890, 50%)
+  
+  .org
+    display block
+    background url('/images/logo-skookum-white.png')
+    height 49px
+    margin-top -25px
+    position absolute
+    right 1.5em
+    top 50%
+    text-indent -999em
+    width 56px
+
+    //background url('/images/logo-skookum.png')
+    //height 50px
+    //width 206px
+
+// @end vcard footer
+
+// @group general
+
+h2.standard
+  inline-block()
+  background rgba(0,0,0,.5)
+  color #fff
+  margin-left -5.75% !important
+  padding 2.5% 5%
+
+.faded
+  opacity .1
+
+ol.toc
+  font-family 'Kelly Slab', Rockwell, Impact, sans-serif;
+  font-size 2em
+  font-weight 700
+  letter-spacing 1px
+  list-style-type lower-roman
+
+
+// @end general
