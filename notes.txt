@@ -1,0 +1,8 @@
+NOTES
+=============
+
+
+- "responsive structures" that observe their internal and external
+  environment and change form to suit any situation.
+
+
