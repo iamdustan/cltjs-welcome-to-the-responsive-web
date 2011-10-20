@@ -226,16 +226,42 @@ pre
   h1
     font-size 2em
 
-  h2.tag
+  h2.tag,
+  .belowTag
     position static
+  
+  .belowTag
+    img
+      position static
+
+  figure.left img
+    top auto
+    left auto
+    bottom 0
+    right 0
+    opacity .5
+
+  pre
+    font-size 1.25em
 
   .vcard
     position fixed
     padding .5em 1.5em
 
-
   .list
     font-size 1.5em
+    padding 0 0 0 20px
+
+  li
+    i.push
+      font-size .75em
+      position relative
+      top .375em
+      right -10px
+      background-color rgba(100,255,55,.125)
+      border-radius 1em
+      padding .25em .5em
+      color #fff
 
 // @end desktop
 

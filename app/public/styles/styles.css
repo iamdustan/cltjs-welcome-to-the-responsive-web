@@ -964,8 +964,22 @@ pre {
   h1 {
     font-size: 2em;
   }
-  h2.tag {
+  h2.tag,
+  .belowTag {
     position: static;
+  }
+  .belowTag img {
+    position: static;
+  }
+  figure.left img {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+  pre {
+    font-size: 1.25em;
   }
   .vcard {
     position: fixed;
@@ -973,6 +987,21 @@ pre {
   }
   .list {
     font-size: 1.5em;
+    padding: 0 0 0 20px;
+  }
+  li i.push {
+    font-size: 0.75em;
+    position: relative;
+    top: 0.375em;
+    right: -10px;
+    background-color: rgba(100,255,55,0.13);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    border-radius: 1em;
+    padding: 0.25em 0.5em;
+    color: #fff;
   }
 }
 @media only projector {
