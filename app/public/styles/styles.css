@@ -240,6 +240,31 @@ td {
 .taR {
   text-align: right;
 }
+.push {
+  float: right;
+}
+.pull {
+  float: left;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
 @media print {
   * {
     background: transparent !important;
@@ -296,6 +321,131 @@ td {
   h3 {
     page-break-after: avoid;
   }
+}
+pre.sh_sourceCode {
+  color: #008bff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_keyword {
+  color: #f8c50b;
+  font-weight: bold;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_type {
+  color: #e1e72f;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_string {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_regexp {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_specialchar {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_comment {
+  color: #fb0;
+  font-weight: normal;
+  font-style: italic;
+}
+pre.sh_sourceCode .sh_number {
+  color: #f87ff4;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_preproc {
+  color: #b0f;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_symbol {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_function {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_cbracket {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_url {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_date {
+  color: #f8c50b;
+  font-weight: bold;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_time {
+  color: #f8c50b;
+  font-weight: bold;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_file {
+  color: #f8c50b;
+  font-weight: bold;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_ip {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_name {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_variable {
+  color: #13d8ef;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_oldfile {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_newfile {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_difflines {
+  color: #f8c50b;
+  font-weight: bold;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_selector {
+  color: #13d8ef;
+  font-weight: normal;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_property {
+  color: #f8c50b;
+  font-weight: bold;
+  font-style: normal;
+}
+pre.sh_sourceCode .sh_value {
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
 }
 html {
   height: 100%;
@@ -581,6 +731,22 @@ body {
   color: #fff;
   text-shadow: 0 2px 5px rgba(0,0,0,0.50);
 }
+.deck-container >.slide.orange pre {
+  background: rgba(0,0,0,0.88);
+  border: 0;
+}
+.deck-container >.slide.dark {
+  background: -moz-linear-gradient(top, #323232, #232323 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #323232), color-stop(100%, #232323));
+  background: -webkit-linear-gradient(top, #323232 0%, #232323 100%);
+  background: -o-linear-gradient(top, #323232 0%, #232323 100%);
+  background: -ms-linear-gradient(top, #323232 0%, #232323 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#232323',GradientType=0 );
+  background: linear-gradient(top, #323232 0%, #323232 100%);
+  background: /* W3C */;
+  color: #eee;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
 .tag {
   background: rgba(255,255,255,0.90);
   border: 0;
@@ -591,6 +757,22 @@ body {
   right: 0;
   top: 30%;
 }
+.tag.negative {
+  background: -moz-linear-gradient(top, #bf0000, #800000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bf0000), color-stop(100%, #800000));
+  background: -webkit-linear-gradient(top, #bf0000 0%, #800000 100%);
+  background: -o-linear-gradient(top, #bf0000 0%, #800000 100%);
+  background: -ms-linear-gradient(top, #bf0000 0%, #800000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0000', endColorstr='#800000',GradientType=0 );
+  background: linear-gradient(top, #bf0000 0%, #bf0000 100%);
+  background: /* W3C */;
+}
+.belowTag {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 55%;
+}
 img.full {
   position: absolute;
   top: 0;
@@ -598,6 +780,35 @@ img.full {
   min-height: 100%;
   min-width: 100%;
   z-index: -1;
+}
+figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+figure.full img {
+  min-height: 100%;
+  min-width: 100%;
+}
+figure figcaption {
+  bottom: 132px;
+  color: #fff;
+  padding-right: 18px;
+  position: absolute;
+  right: 0;
+  text-shadow: 0 0 0 transparent;
+}
+figure figcaption a,
+figure figcaption a:link,
+figure figcaption a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+}
+figure.left img {
+  top: 5%;
+  left: 5%;
 }
 .vcard {
   color: #fff;
@@ -679,12 +890,27 @@ h2.standard {
 .faded {
   opacity: 0.1;
 }
-ol.toc {
+.list {
   font-family: "Kelly Slab", Rockwell, Impact, sans-serif;
   font-size: 2em;
   font-weight: 700;
   letter-spacing: 1px;
+}
+.list .list {
+  font-size: 0.75em;
+}
+.list small {
+  display: block;
+  font-size: 0.75em;
+}
+.list li.negative {
+  color: #f00;
+}
+ol.list {
   list-style-type: lower-roman;
+}
+pre {
+  font-family: Monaco, fixed-width;
 }
 @media only screen and (max-width: 768px) {
   h1 {
@@ -696,7 +922,12 @@ ol.toc {
   .vcard {
     padding: 0.375em 1.5em;
   }
-  ol.toc {
+  .list {
+    font-size: 1.5em;
+  }
+}
+@media only projector {
+  pre {
     font-size: 1.5em;
   }
 }

@@ -3,6 +3,7 @@ div#hcard-Dustan-Kasten.vcard
   a.url(rel='me')(href='http://twitter.com/iamdustan')@iamdustan
   div.org Skookum Digital Works
 
+// INTRODUCTION
 section.slide
   h1 Welcome to the Responsive Web
 
@@ -11,25 +12,216 @@ section.slide.skookum
 
 section.slide
   h2.tag The web has grown beyond our desktops
-  img.full(src='/images/slide-2-devices.jpg')
+  figure.full
+    img(src='/images/slide-2-devices.jpg')
+    figcaption Photo 
+      a(href='http://www.flickr.com/photos/adactio/6153522068/in/photostream') Jeremy Keith
 
 section.slide
   h2.tag The web has grown beyond our desktops
-  img.full(src='/images/slide-3-devices.jpg')
+  figure.full
+    img(src='/images/slide-3-devices.jpg')
+    figcaption Photo 
+      a(href='http://www.flickr.com/photos/adactio/6005668024/') Jeremy Keith
 
+section.slide
+  h2.tag Responsive Design was:
+  ul.belowTag.list
+    li.slide Invented by architects to create responsive structures
+
+  figure.left
+    img(src='/images/slide-4-architecture.jpg')
+
+section.slide
+  h2.tag Responsive Design is:
+  ul.belowTag.list
+    li.slide Adapting to the environment
+    li.slide Adapting to the users needs
+
+  figure.left
+    img(src='/images/slide-4-architecture.jpg')
 
 section.slide.orange
   h2.standard Tonight
-  ol.toc
+  ol.list
     li.slide Media Queries, CSS3, and Shimville
     li.slide UA Sniffing is out. Bring on the <abbr title="Client-side detection">CSD</abbr>
     li.slide Page Speed
   img.faded.full(src='/images/slide-3-devices.jpg')
 
+// PART 1 :: TECHNOLOGIES
+section.slide.dark
+  h2.standard Media Queries
+  pre.sh_css
+    | @media screen and (min-width: 768px) {
+    |   /* normal css */
+    | }
 
-section.slide
-  h2.standard slide, slide, slide
-  ul
-    li Move it or lose it buster
-    li I'm watching a movie with Zombies
-    li ZOMG!
+// media queries
+section.slide.dark
+  h2.standard Media Queries
+  ul.list
+    li.slide Provide CSS dynamic control of layout and reflow.
+    li.slide Great browser support.
+      ul.list
+        li.positive FF4+, Chrome 11+, Safari 3.2+, iOS Safari 3.2+, Opera Mini 5+, Opera Mobile 10+, Opera 10.6+, Android 2.1+, IE 9+
+
+section.slide.dark
+  h2.standard Media Queries
+  h2.tag.negative IE8 and Under
+  figure.belowTag
+    img(src='/images/slide-ie-is-evil.jpg')
+    figcaption.visuallyhidden
+      a(href='http://media.photobucket.com/image/evil+ie+/cthulhu19887/pc/5e005f64.jpg') http://media.photobucket.com/image/evil+ie+/cthulhu19887/pc/5e005f64.jpg
+
+// html5
+section.slide.dark
+  h2.standard HTML5
+  ul.list
+    li Semantic Elements
+      small (section, header, aside)
+    li Input elements
+      small (email, date, datetime)
+    li Media elements
+      small (Video, SVG, Canvas, Audio)
+    li Interactive elements
+      small (menu, command, details)
+
+section.slide.dark
+  h2.standard HTML5
+  ul.list
+    li 
+      i.push Use &rsquo;em
+      | Semantic Elements
+      small (section, header, aside)
+
+    li Input elements
+      small (email, date, datetime)
+    li Media elements
+      small (Video, SVG, Canvas, Audio)
+    li Interactive elements
+      small (menu, command, details)
+
+section.slide.dark
+  h2.standard HTML5
+  ul.list
+    li 
+      i.push Use &rsquo;em
+      | Semantic Elements
+      small (section, header, aside)
+    li
+      i.push iOS Reigns Supreme
+      | Input elements
+      small (email, date, datetime)
+    li Media elements
+      small (Video, SVG, Canvas, Audio)
+    li Interactive elements
+      small (menu, command, details)
+
+section.slide.dark
+  h2.standard HTML5
+  ul.list
+    li 
+      i.push Use &rsquo;em
+      | Semantic Elements
+      small (section, header, aside)
+    li
+      i.push iOS Reigns Supreme
+      | Input elements
+      small (email, date, datetime)
+    li
+      i.push Provide fallbacks
+      | Media elements
+      small (Video, SVG, Canvas, Audio)
+    li Interactive elements
+      small (menu, command, details)
+
+section.slide.dark
+  h2.standard HTML5
+  ul.list
+    li 
+      i.push Use &rsquo;em
+      | Semantic Elements
+      small (section, header, aside)
+    li
+      i.push iOS Reigns Supreme
+      | Input elements
+      small (email, date, datetime)
+    li
+      i.push Provide fallbacks
+      | Media elements
+      small (Video, SVG, Canvas, Audio)
+    li
+      i.push No clue
+      | Interactive elements
+      small (menu, command, details)
+
+// shims
+section.slide.dark
+  h2.standard Shims
+  ul.list
+    li HTML5 Shiv
+    li Respond.js
+    li Modernizr
+    li Yepnope.js
+    li 
+      a(href='https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills') This page on Github
+
+// PART 2 :: FEATURE DETECTION
+section.slide.orange
+  h2.standard Feature Detection
+  p.list The practice of detecting for the desired parameters and dynamically providing the appropriate workarounds.
+
+section.slide.orange
+  h2.standard Feature Detection
+  section
+    h3 Libraries using it
+    ul.list
+      li jQuery
+      li Dojo
+      li Mootools
+  section.slide
+    h3 Libraries providing it
+    ul.list
+      li has.js
+      li Modernizr.js
+
+// Dynamic resource loading
+section.slide.orange
+  h2.standard Dynamic Resource Loading
+  h3.list yepnope.js
+  ul.list
+    li yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.
+
+section.slide.orange
+  h2.standard Dynamic Resource Loading
+  h3.list yepnope.js
+  pre.sh_javascript
+    | yepnope({
+    |   test : Modernizr.cssanimations
+    | , yep : 'inc/css/animations.css'
+    | , nope : 'inc/js/animations.js'
+    | });
+
+section.slide.orange
+  h2.standard Dynamic Resource Loading
+  h3.list The noscript image swap
+  pre.sh_html
+    | <noscript data-img="/path/to/image.jpg"
+    |     data-mobile="/path/to/small-image/jpg"
+    |     data-alt="Image alt">
+    |   <img src="/path/to/image.jpg" alt="Solutions by Industry">
+    | </noscript>
+
+  pre.sh_js
+    | $('[data-img]').each(function() {
+    |   var self = $(this)
+    |     , data = self.data()
+    |     , src = ( data.mobile && $(window).width()<480 ) ?
+    |         data.mobile : data.img ;
+    |   self.replaceWith( '<img src="' + src + '" alt="' + data.alt + '" />' )
+    | });
+
+section.slide.dark
+  h2.standard Page Speed
+

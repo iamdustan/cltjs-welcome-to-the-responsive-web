@@ -10,4 +10,10 @@ $.extend(true, $.deck.defaults, {
 
 $.deck('.slide');
 
+setTimeout(function() {
+  window.scrollTo(0, 1)
+  $('#hcard-Dustan-Kasten').css({ bottom: 0 });
+}, 100);
 
+
+sh_highlightDocument();
