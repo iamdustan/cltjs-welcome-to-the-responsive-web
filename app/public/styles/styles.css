@@ -981,6 +981,21 @@ pre {
   top: 5%;
   right: 5%;
 }
+.directTo {
+  font-size: 1.5em;
+  color: #fff;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
+  border-radius: 1.5em;
+  background: #507d72;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  padding: 0.25em 1em;
+  text-shadow: 0 1px 0 #000;
+}
 .csstransitions.csstransforms .deck-container .slide {
   -webkit-transition: opacity 500ms ease-in-out 0ms;
   -moz-transition: opacity 500ms ease-in-out 0ms;
