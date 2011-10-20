@@ -18,7 +18,10 @@ setTimeout(function() {
 
 sh_highlightDocument();
 
-now.changeToSlide = function( to, from ) {
-  $.deck('go', to)
-};
+
+
+$(document).bind('deck.change', function( event, from, to ) {
+  now.moveToSlide( to, from );
+});
+
 

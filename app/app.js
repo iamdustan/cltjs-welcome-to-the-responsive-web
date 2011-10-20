@@ -65,7 +65,8 @@ exports = module.exports = (function() {
     // Helpers
     
     require('./config/helpers')(server)
-    
+    require('./controllers/now')(server)
+
     // Map routes
     
     require('./config/routes')(server)
