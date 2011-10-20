@@ -15,24 +15,23 @@ body
   >.slide
     background two-stop(#ffffff, #efefef)
 
-    &.skookum
-      background two-stop(skookumGreen, skookumGreenDark)
-      color #fff
-      text-shadow 0 2px 5px rgba(0,0,0,.5)
+  >.skookum
+    background two-stop(skookumGreen, skookumGreenDark)
+    color #fff
+    text-shadow 0 2px 5px rgba(0,0,0,.5)
 
-    &.orange
-      background two-stop(darken(#ff8900, 10%), darken(#ff8900, 40%))
-      color #fff
-      text-shadow 0 2px 5px rgba(0,0,0,.5)
+  >.orange
+    background two-stop(darken(#ff8900, 10%), darken(#ff8900, 40%))
+    color #fff
+    text-shadow 0 2px 5px rgba(0,0,0,.5)
 
-      pre
-        background rgba(0,0,0,.875)
-        border 0
+    pre
+      background rgba(0,0,0,.875)
 
-    &.dark
-      background two-stop(#323232, #232323)
-      color #eee
-      text-shadow 0 1px 1px rgba(0,0,0,.25)
+  >.dark
+    background two-stop(#323232, #232323)
+    color #eee
+    text-shadow 0 1px 1px rgba(0,0,0,.25)
 
 .tag
   background rgba(255,255,255,.9)
@@ -187,8 +186,8 @@ ol.list
   list-style-type lower-roman
 
 pre
+  border 0 !important
   font-family Monaco, fixed-width
-
 // @end general
 
 // @group desktop
