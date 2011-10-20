@@ -18,10 +18,10 @@ setTimeout(function() {
 
 sh_highlightDocument();
 
-
-
+now.ready(function() {
 $(document).bind('deck.change', function( event, from, to ) {
   now.moveToSlide( to, from );
+});
 });
 
 
