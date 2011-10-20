@@ -957,15 +957,19 @@ pre {
   border: 0 !important;
   font-family: Monaco, fixed-width;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+  body.deck-container {
+    font-size: 0.8em;
+  }
   h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   h2.tag {
     position: static;
   }
   .vcard {
-    padding: 0.375em 1.5em;
+    position: fixed;
+    padding: 0.5em 1.5em;
   }
   .list {
     font-size: 1.5em;
