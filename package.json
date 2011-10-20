@@ -7,7 +7,7 @@
     "stylus":">=0.13.7",
     "connect-timeout":">=0.0.1",
     "cluster":">=0.4.2",
-    "express-messages":">=0.0.1"n
+    "express-messages":">=0.0.1",
     "nowjs":">=0.0.1"
 
   },
